@@ -1,0 +1,18 @@
+Package: proj4shortcut
+Title: What the Package Does (one line, title case)
+Version: 0.0.0.9000
+Authors@R: c(person("Jeffrey", "Hollister", email = "hollister.jeff@epa.gov", 
+                  role = c("aut", "cre")))
+Description: Most spatial packages in R rely on Proj.4 strings for defining 
+coordinate reference systems.  While it is possible to simply specify the full 
+string as a character vector, the details of the string must usually be looked 
+up.  This package provides shortcuts through functions with names (entirely determined by the 
+contributors of this package!) that return the full specified Proj.4 string.
+URL: https://www.github.com/usepa/proj4shortcut
+BugReports: https://github.com/usepa/proj4shortcut/issues
+Maintainer: Jeffrey Hollister <hollister.jeff@epa.gov>
+Depends: R (>= 3.0.0)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
