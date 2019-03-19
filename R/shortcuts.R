@@ -32,3 +32,21 @@ bc_albers <- "+proj=aea +lat_1=50 +lat_2=58.5 +lat_0=45 +lon_0=-126 +x_0=1000000
 #' 
 #' @export
 etrs_laea <- "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs"
+
+#' UTM zone projection with wgs84 proj.4 string
+#'
+#' Shortcut that provides a proj.4 string 
+#' 
+#' @param zone chr string of UTM zone
+#' 
+#' @export
+#' 
+#' @examples 
+#' utm_wgs84('10')
+utm_wgs84 <- function(zone){
+  
+  out <- paste0("+proj=utm +zone=", zone, " +ellps=WGS84 +datum=WGS84 +no_defs")
+  
+  return(out)
+  
+}

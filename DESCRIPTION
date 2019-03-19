@@ -6,7 +6,10 @@ Authors@R: c(person("Jeffrey", "Hollister", email = "hollister.jeff@epa.gov",
              person("Andy", "Teucher", email = "andy.teucher@gmail.com", 
                     role = c("aut")),
              person("Francisco", "Rodriguez-Sanchez", email = "f.rodriguez.sanc@gmail.com", 
-                    role = c("aut")))
+                    role = c("aut")),
+             person("Marcus W.", "Beck", email = "marcusb@sccwrp.org", 
+                    role = c("ctb"))
+                    )
 Description: Most spatial packages in R rely on Proj.4 strings for defining 
              coordinate reference systems.  While it is possible to simply 
              specify the full string as a character vector, the details of the 
